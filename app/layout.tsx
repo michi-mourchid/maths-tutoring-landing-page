@@ -7,25 +7,17 @@ const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
-  title: 'Mourchid Maths | Cours particuliers de maths - La Reunion',
-  description: 'Accompagnement personnalise en mathematiques pour collegiens et lyceens a La Reunion. Methode d\'ingenieur, resultats concrets. Premiere seance gratuite.',
-  generator: 'v0.app',
+  title: 'Maths & Réussite | Cours particuliers de maths à La Réunion - Ingénieur',
+  description: 'Accompagnement personnalisé en mathematiques pour collégiens et lycéens à La Réunion. Méthode d\'ingénieur, résultats concrets. Première séance gratuite.',
   icons: {
     icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/web-app-manifest-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/web-app-manifest-512x512.png', sizes: '512x512', type: 'image/png' },
     ],
-    apple: '/apple-icon.png',
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '192x192', type: 'image/png' },
+    ]
   },
 }
 

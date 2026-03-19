@@ -6,19 +6,19 @@ import { Star } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Sophie L.",
-    role: "Maman de Theo, 3eme",
-    text: "Theo est passe de 7 a 13 de moyenne en maths en seulement 3 mois. Mourchid a su lui redonner confiance avec une patience incroyable. Je recommande vivement !",
+    name: "Kamlati A.",
+    role: "Maman de Youmna, 4ème",
+    text: "Youmna est passée de 12 à 16 de moyenne en maths en seulement 3 mois. Mourchid a su lui redonner confiance avec une patience incroyable. Je recommande vivement !",
   },
   {
-    name: "Karim B.",
-    role: "Papa de Yasmine, 1ere",
-    text: "Yasmine avait completement decroche en maths. Grace a la methode structuree de Mourchid, elle a non seulement rattrape son retard mais elle comprend enfin ce qu'elle fait.",
+    name: "Rahada M.",
+    role: "Grande soeur de Rachida, Terminale",
+    text: "Ma soeur avait complètement abandonné les maths et enchaînait les notes basses. Grâce à l'accompagnement structuré de Mourchid, elle a non seulement rattrapé son retard mais elle a l'air de comprendre enfin ce qu'elle fait.",
   },
   {
-    name: "Marie D.",
-    role: "Maman de Lucas, 4eme",
-    text: "Mon fils disait detester les maths. Apres quelques seances avec Mourchid, il m'a dit \"en fait, c'est pas si complique\". C'est exactement ce dont il avait besoin.",
+    name: "Maryline H.",
+    role: "Maman de Maïly, Première",
+    text: "Maïly a commencé avec des 3/20. Elle détestait les maths. Après quelques séances avec Mourchid, elle est passée à 13 puis 15 ! Elle m'a dit \"en fait, c'est pas si compliqué\" lol. C'est exactement ce dont elle avait besoin.",
   },
 ]
 
@@ -30,9 +30,8 @@ export function Testimonials() {
     <section
       ref={ref}
       id="temoignages"
-      className={`py-20 md:py-28 bg-secondary/50 transition-all duration-700 ${
-        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+      className={`py-20 md:py-28 bg-secondary/50 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
     >
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
@@ -40,7 +39,7 @@ export function Testimonials() {
             {"Ce que disent les parents"}
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-            {"Des resultats concrets, des familles satisfaites."}
+            {"Des résultats concrets, des parents rassurés et des élèves confiants."}
           </p>
         </div>
 

@@ -12,14 +12,13 @@ export function FinalCTA() {
     <section
       ref={ref}
       id="rdv"
-      className={`py-20 md:py-28 transition-all duration-700 ${
-        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+      className={`py-20 md:py-28 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
     >
       <div className="mx-auto max-w-4xl px-6">
         <div className="rounded-2xl border border-primary/20 bg-primary/5 p-8 md:p-14 text-center">
           <h2 className="font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl text-balance">
-            {"Reservez votre diagnostic gratuit"}
+            {"Réservez votre diagnostic gratuit"}
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
             {"Parlons de la situation de votre enfant et voyons comment je peux l'aider."}
@@ -47,18 +46,18 @@ export function FinalCTA() {
                 <Phone className="h-8 w-8 text-primary" />
               </div>
               <p className="mb-2 text-lg font-semibold text-foreground">
-                {"Calendly - Prendre rendez-vous"}
+                {"Google Meet - Prendre rendez-vous"}
               </p>
               <p className="mb-6 text-sm text-muted-foreground">
-                {"Selectionnez un creneau qui vous convient"}
+                {"Sélectionnez un créneau qui vous convient"}
               </p>
               <a
-                href="https://calendly.com"
+                href="https://calendly.com/mourchidmoutuidine/diagnostic-cours-maths-la-reunion"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground transition-all hover:opacity-90"
               >
-                {"Reserver un appel diagnostic gratuit"}
+                {"Réserver un appel diagnostic gratuit"}
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
             </div>

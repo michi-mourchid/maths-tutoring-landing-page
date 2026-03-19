@@ -9,19 +9,19 @@ const problems = [
     icon: ShieldAlert,
     title: "Perte de confiance",
     description:
-      "Votre enfant se dit \"nul en maths\" et abandonne avant meme d'essayer.",
+      "Votre enfant se dit \"nul en maths\" et abandonne avant même d'essayer.",
   },
   {
     icon: Brain,
-    title: "Methodes inefficaces",
+    title: "Méthodes inefficaces",
     description:
-      "Il travaille beaucoup mais ses notes ne progressent pas. La methode n'est pas la bonne.",
+      "Il travaille beaucoup mais ses notes ne progressent pas. La méthode n'est pas la bonne.",
   },
   {
     icon: BookX,
     title: "Bases mal comprises",
     description:
-      "Des lacunes accumulees rendent chaque nouveau chapitre incomprehensible.",
+      "Des lacunes accumulées rendent chaque nouveau chapitre incompréhensible.",
   },
 ]
 
@@ -32,17 +32,16 @@ export function Problem() {
   return (
     <section
       ref={ref}
-      className={`py-20 md:py-28 transition-all duration-700 ${
-        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+      className={`py-20 md:py-28 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
     >
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl text-balance">
-            {"Pourquoi certains eleves bloquent en maths"}
+            Pourquoi certains élèves <span className="text-blue-600">bloquent en maths</span>
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-            {"Comprendre le probleme, c'est deja commencer a le resoudre."}
+            {"Comprendre le problème, c'est déjà commencer à le résoudre."}
           </p>
         </div>
 
@@ -65,7 +64,7 @@ export function Problem() {
 
         <div className="mt-12 rounded-xl border border-primary/20 bg-primary/5 p-8 text-center">
           <p className="font-serif text-xl font-semibold text-foreground md:text-2xl">
-            {"\"Les maths ne sont pas une question d'intelligence mais de methode.\""}
+            {"\"Les maths ne sont pas une question d'intelligence mais de méthode.\""}
           </p>
         </div>
       </div>

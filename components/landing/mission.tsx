@@ -9,19 +9,19 @@ const points = [
     icon: Heart,
     title: "Reconstruire la confiance",
     description:
-      "Chaque petit progres est valorise pour que votre enfant reprenne foi en ses capacites.",
+      "Chaque petit progrès est valorisé pour que votre enfant reprenne foi en ses capacités.",
   },
   {
     icon: Lightbulb,
-    title: "Raisonnement structure",
+    title: "Raisonnement structuré",
     description:
-      "J'enseigne une methode claire et logique qui s'applique a tous les exercices.",
+      "J'enseigne une méthode claire et logique qui s'applique à tous les exercices.",
   },
   {
     icon: MessageCircle,
     title: "Explications simples",
     description:
-      "Des mots simples, des exemples concrets. Pas de jargon inutile.",
+      "Des mots simples, des analogies et des exemples concrets pour mieux comprendre.",
   },
 ]
 
@@ -32,17 +32,16 @@ export function Mission() {
   return (
     <section
       ref={ref}
-      className={`py-20 md:py-28 bg-secondary/50 transition-all duration-700 ${
-        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+      className={`py-20 md:py-28 bg-secondary/50 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
     >
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl text-balance">
-            {"Mon objectif : montrer a votre enfant qu'il en est capable"}
+            Mon objectif : montrer à votre enfant qu'il en est <span className="text-blue-600">capable</span>
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-            {"Un accompagnement bienveillant, structure et efficace."}
+            {"Un accompagnement bienveillant, structuré et efficace."}
           </p>
         </div>
 

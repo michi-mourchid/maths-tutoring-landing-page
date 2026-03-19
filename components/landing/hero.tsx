@@ -2,7 +2,8 @@
 
 import { useEffect, useRef } from "react"
 import Image from "next/image"
-import { ArrowRight, MapPin, Briefcase, GraduationCap } from "lucide-react"
+import { ArrowRight, MapPin, Briefcase, GraduationCap, Globe } from "lucide-react"
+import { remainingSlots, totalSlots } from "@/app/page"
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -28,28 +29,37 @@ export function Hero() {
       <div className="absolute inset-0 bg-secondary/40" />
       <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-12 px-6 md:flex-row md:gap-16">
         <div className="flex-1 text-center md:text-left">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary">
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
-            </span>
-            10 places disponibles seulement
+          <div className="flex items-center gap-2">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+              </span>
+              {totalSlots} places disponibles seulement
+            </div>
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-red-700/20 bg-red-700/5 px-4 py-1.5 text-sm font-medium text-red-700">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-500 opacity-75" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-red-700" />
+              </span>
+              {remainingSlots} places restantes
+            </div>
           </div>
 
-          <h1 className="text-balance font-serif text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
-            {"Reussir les maths avec une methode d'ingenieur"}
+          <h1 className=" font-serif text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
+            Réussir les maths avec une <span className="text-blue-600">méthode d'ingénieur</span> à La Réunion
           </h1>
 
           <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
-            {"Accompagnement personnalise pour collegiens et lyceens pour augmenter leur moyenne et reprendre confiance."}
+            Accompagnement personnalisé pour <span className="font-bold text-blue-600">collégiens</span> et <span className="font-bold text-blue-600">lycéens</span> pour augmenter leur moyenne et reprendre confiance.
           </p>
 
-          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row md:items-start">
+          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row">
             <a
               href="#rdv"
               className="group inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground transition-all hover:opacity-90"
             >
-              {"Reserver un appel diagnostic gratuit"}
+              {"Réserver un appel diagnostic gratuit"}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <span className="text-sm text-muted-foreground">15 min, sans engagement</span>
@@ -59,32 +69,36 @@ export function Hero() {
         <div className="w-full max-w-sm flex-shrink-0">
           <div className="overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-lg">
             <div className="mb-5 flex items-center gap-4">
-              <div className="relative h-20 w-20 overflow-hidden rounded-xl">
+              <div className="relative h-40 w-40 overflow-hidden rounded-xl">
                 <Image
-                  src="/images/tutor.jpg"
-                  alt="Mourchid, tuteur en mathematiques"
+                  src="/images/Mourchid.JPG"
+                  alt="Mourchid, ingénieur et tuteur en mathématiques"
                   fill
                   className="object-cover"
                   priority
                 />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-foreground">Mourchid</h3>
-                <p className="text-sm text-muted-foreground">Tuteur en mathematiques</p>
+                <h3 className="text-lg font-bold text-foreground">Mourchid MOUTUIDINE</h3>
+                <p className="text-sm text-muted-foreground">Tuteur en mathématiques</p>
               </div>
             </div>
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-3 text-sm text-foreground">
                 <GraduationCap className="h-4 w-4 text-primary" />
-                <span>{"Ingenieur diplome"}</span>
+                <span>{"Diplômé Ingénieur généraliste"}</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-foreground">
                 <Briefcase className="h-4 w-4 text-primary" />
-                <span>{"Experience internationale au Canada"}</span>
+                <span>{"Ingénieur Informatique logiciel en fonction"}</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm text-foreground">
+                <Globe className="h-4 w-4 text-primary" />
+                <span>{"Expérience pro en Amérique du Nord"}</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-foreground">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span>{"Base a Saint-Denis (La Reunion)"}</span>
+                <span>{"Basé à Sainte-Clotilde (La Réunion)"}</span>
               </div>
             </div>
           </div>

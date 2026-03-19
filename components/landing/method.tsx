@@ -11,23 +11,23 @@ const steps = [
     title: "Appel diagnostic gratuit",
     subtitle: "15 min",
     description:
-      "On fait le point ensemble sur la situation de votre enfant et ses difficultes.",
+      "On fait le point ensemble sur la situation de votre enfant, ses difficultés et vos préoccupations.",
   },
   {
     icon: Video,
     number: "02",
-    title: "Seance decouverte gratuite",
-    subtitle: "1h30 en visio avec l'eleve",
+    title: "Séance découverte gratuite",
+    subtitle: "30min en visio avec l'élève",
     description:
-      "Je travaille directement avec votre enfant pour evaluer son niveau et adapter mon approche.",
+      "Je travaille directement avec votre enfant pour évaluer son profil et adapter mon approche.",
   },
   {
     icon: TrendingUp,
     number: "03",
-    title: "Plan de progression personnalise",
+    title: "Plan de progression personnalisé",
     subtitle: "Sur mesure",
     description:
-      "Un programme adapte avec des objectifs clairs pour des resultats visibles.",
+      "Un programme adapté avec un planning clair et des objectifs clairs pour des résultats visibles.",
   },
 ]
 
@@ -39,14 +39,13 @@ export function Method() {
     <section
       ref={ref}
       id="methode"
-      className={`py-20 md:py-28 transition-all duration-700 ${
-        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+      className={`py-20 md:py-28 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
     >
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl text-balance">
-            {"Une approche simple en 3 etapes"}
+            Une approche simple en <span className="text-blue-600">3 étapes</span>
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
             {"Un parcours clair et transparent pour aider votre enfant."}

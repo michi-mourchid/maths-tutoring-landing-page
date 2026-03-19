@@ -20,9 +20,8 @@ export function Assessment() {
   return (
     <section
       ref={ref}
-      className={`py-20 md:py-28 transition-all duration-700 ${
-        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+      className={`py-20 md:py-28 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
     >
       <div className="mx-auto max-w-3xl px-6">
         <div className="rounded-2xl border border-border bg-card p-8 md:p-12 shadow-sm">
@@ -113,13 +112,13 @@ export function Assessment() {
                   {"Merci ! Votre enfant peut progresser avec le bon accompagnement."}
                 </p>
                 <p className="mt-3 text-muted-foreground">
-                  {"Reservez un appel diagnostic gratuit pour en discuter ensemble."}
+                  {"Réservez un appel diagnostic gratuit pour en discuter ensemble."}
                 </p>
                 <a
                   href="#rdv"
                   className="group mt-6 inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground transition-all hover:opacity-90"
                 >
-                  {"Reserver mon appel diagnostic"}
+                  {"Réserver mon appel diagnostic"}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </a>
               </div>

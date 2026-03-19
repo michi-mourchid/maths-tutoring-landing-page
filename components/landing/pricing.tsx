@@ -12,9 +12,8 @@ export function Pricing() {
     <section
       ref={ref}
       id="tarifs"
-      className={`py-20 md:py-28 transition-all duration-700 ${
-        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+      className={`py-20 md:py-28 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
     >
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
@@ -22,7 +21,7 @@ export function Pricing() {
             {"Un accompagnement accessible"}
           </h2>
           <div className="mt-4 inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
-            {"A partir de 20\u20AC/h"}
+            {"À partir de 20\u20AC/h"}
           </div>
         </div>
 
@@ -36,15 +35,15 @@ export function Pricing() {
             <ul className="mt-6 flex flex-col gap-3 text-left">
               <li className="flex items-center gap-3 text-sm text-foreground">
                 <Check className="h-4 w-4 text-primary flex-shrink-0" />
-                {"Suivi personnalise"}
+                {"Suivi personnalisé"}
               </li>
               <li className="flex items-center gap-3 text-sm text-foreground">
                 <Check className="h-4 w-4 text-primary flex-shrink-0" />
-                {"Exercices adaptes"}
+                {"Exercices adaptés"}
               </li>
               <li className="flex items-center gap-3 text-sm text-foreground">
                 <Check className="h-4 w-4 text-primary flex-shrink-0" />
-                {"Bilan de progression regulier"}
+                {"Bilan de progression régulier"}
               </li>
             </ul>
             <a
@@ -67,15 +66,15 @@ export function Pricing() {
             <ul className="mt-6 flex flex-col gap-3 text-left">
               <li className="flex items-center gap-3 text-sm text-foreground">
                 <Check className="h-4 w-4 text-primary flex-shrink-0" />
-                {"Suivi personnalise"}
+                {"Suivi personnalisé"}
               </li>
               <li className="flex items-center gap-3 text-sm text-foreground">
                 <Check className="h-4 w-4 text-primary flex-shrink-0" />
-                {"Preparation bac incluse"}
+                {"Préparation bac incluse"}
               </li>
               <li className="flex items-center gap-3 text-sm text-foreground">
                 <Check className="h-4 w-4 text-primary flex-shrink-0" />
-                {"Support entre les seances"}
+                {"Support entre les séances"}
               </li>
             </ul>
             <a
@@ -88,7 +87,7 @@ export function Pricing() {
         </div>
 
         <p className="mt-8 text-center text-sm text-muted-foreground">
-          {"Premiere seance en visio gratuite. Sans engagement."}
+          {"Première séance en visio gratuite. Sans engagement."}
         </p>
       </div>
     </section>

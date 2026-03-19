@@ -11,9 +11,8 @@ export function Program() {
   return (
     <section
       ref={ref}
-      className={`py-20 md:py-28 bg-secondary/50 transition-all duration-700 ${
-        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+      className={`py-20 md:py-28 bg-secondary/50 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
     >
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
@@ -21,7 +20,7 @@ export function Program() {
             {"Pour qui ?"}
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-            {"Un accompagnement adapte a chaque niveau."}
+            {"Un accompagnement adapté à chaque niveau."}
           </p>
         </div>
 
@@ -30,19 +29,19 @@ export function Program() {
             <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
               <BookOpen className="h-6 w-6 text-primary" />
             </div>
-            <h3 className="mb-4 text-xl font-bold text-foreground">{"Collegiens"}</h3>
+            <h3 className="mb-4 text-xl font-bold text-foreground">{"Collégiens"}</h3>
             <ul className="flex flex-col gap-3">
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Calculator className="h-4 w-4 text-primary flex-shrink-0" />
-                {"Consolider les bases en calcul et geometrie"}
+                {"Consolider les bases en calcul et géometrie"}
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Calculator className="h-4 w-4 text-primary flex-shrink-0" />
-                {"Comprendre les concepts cles du programme"}
+                {"Comprendre les concepts clés du programme"}
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Award className="h-4 w-4 text-primary flex-shrink-0" />
-                {"Preparer le brevet sereinement"}
+                {"Préparer le brevet sereinement"}
               </li>
             </ul>
           </div>
@@ -51,19 +50,19 @@ export function Program() {
             <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
               <BookOpen className="h-6 w-6 text-primary" />
             </div>
-            <h3 className="mb-4 text-xl font-bold text-foreground">{"Lyceens"}</h3>
+            <h3 className="mb-4 text-xl font-bold text-foreground">{"Lycéens"}</h3>
             <ul className="flex flex-col gap-3">
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Calculator className="h-4 w-4 text-primary flex-shrink-0" />
-                {"Augmenter sa moyenne de maniere durable"}
+                {"Augmenter sa moyenne de manière significative"}
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Calculator className="h-4 w-4 text-primary flex-shrink-0" />
-                {"Maitriser les notions avancees"}
+                {"Maîtriser les notions avancées"}
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Award className="h-4 w-4 text-primary flex-shrink-0" />
-                {"Preparer le bac avec confiance"}
+                {"Préparer le bac avec confiance"}
               </li>
             </ul>
           </div>

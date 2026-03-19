@@ -11,6 +11,10 @@ import { Testimonials } from "@/components/landing/testimonials"
 import { FinalCTA } from "@/components/landing/final-cta"
 import { Footer } from "@/components/landing/footer"
 
+export const totalSlots = 10
+export const takenSlots = 3
+export const remainingSlots = totalSlots - takenSlots
+
 export default function MathsLandingPage() {
   return (
     <>
