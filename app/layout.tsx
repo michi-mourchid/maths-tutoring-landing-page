@@ -19,6 +19,27 @@ export const metadata: Metadata = {
       { url: '/apple-touch-icon.png', sizes: '192x192', type: 'image/png' },
     ]
   },
+  openGraph: {
+    title: "Maths & Réussite | Cours particuliers de maths à La Réunion - Ingénieur",
+    description: "Accompagnement personnalisé en mathematiques pour collégiens et lycéens à La Réunion. Méthode d'ingénieur, résultats concrets. Première séance gratuite.",
+    url: "https://maths-et-reussite.re",
+    siteName: "Maths & Réussite",
+    images: [
+      {
+        url: "/previsu-lien.png",
+        width: 1200,
+        height: 630,
+        alt: "Maths & Réussite - Cours particuliers de maths à La Réunion - Ingénieur",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Maths & Réussite | Cours particuliers de maths à La Réunion - Ingénieur",
+    description: "Accompagnement personnalisé en mathematiques pour collégiens et lycéens à La Réunion. Méthode d'ingénieur, résultats concrets. Première séance gratuite.",
+    images: ["/previsu-lien.png"],
+  },
 }
 
 export const viewport: Viewport = {
