@@ -1,12 +1,21 @@
 "use client"
 
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 import { useInView } from "@/hooks/use-in-view"
 import { ArrowRight, Shield, Clock, Phone } from "lucide-react"
+import { trackEvent } from "@/lib/analytics"
 
 export function FinalCTA() {
   const ref = useRef<HTMLElement>(null)
   const inView = useInView(ref)
+
+  useEffect(() => {
+    if (inView) {
+      trackEvent("final_cta_view", {
+        page: "home",
+      });
+    }
+  }, [inView]);
 
   return (
     <section
@@ -55,6 +64,12 @@ export function FinalCTA() {
                 href="https://calendly.com/mourchidmoutuidine/diagnostic-cours-maths-la-reunion"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() =>
+                  trackEvent("calendly_click", {
+                    location: "final_cta",
+                    page: "home",
+                  })
+                }
                 className="group inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground transition-all hover:opacity-90"
               >
                 {"Réserver un appel diagnostic gratuit"}

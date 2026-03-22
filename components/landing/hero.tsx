@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react"
 import Image from "next/image"
 import { ArrowRight, MapPin, Briefcase, GraduationCap, Globe } from "lucide-react"
 import { remainingSlots, totalSlots } from "@/app/page"
+import { trackEvent } from "@/lib/analytics"
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -57,6 +58,12 @@ export function Hero() {
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row">
             <a
               href="#rdv"
+              onClick={() =>
+                trackEvent("cta_booking_click", {
+                  location: "hero",
+                  page: "home",
+                })
+              }
               className="group inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground transition-all hover:opacity-90"
             >
               {"Réserver un appel diagnostic gratuit"}
