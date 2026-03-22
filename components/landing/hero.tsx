@@ -98,7 +98,7 @@ export function Hero() {
               </div>
               <div className="flex items-center gap-3 text-sm text-foreground">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span>{"Basé à Sainte-Clotilde (La Réunion)"}</span>
+                <span>{"Basé à Saint-Denis (La Réunion)"}</span>
               </div>
             </div>
           </div>
