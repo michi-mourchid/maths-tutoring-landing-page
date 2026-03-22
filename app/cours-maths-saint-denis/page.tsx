@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle2, MapPin, BookOpen, ArrowRight } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
+import { TrackedCalendlyLink } from "@/components/tracked-calendly-link";
 
 export const metadata: Metadata = {
   title: "Cours de maths à Saint-Denis | Maths & Réussite",
@@ -143,21 +144,14 @@ export default function CoursMathsSaintDenisPage() {
             votre enfant à Saint-Denis.
           </p>
           <div className="mt-8">
-            <Link
-              href="https://calendly.com/mourchidmoutuidine/diagnostic-cours-maths-la-reunion"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() =>
-                trackEvent("calendly_click", {
-                  location: "page_cours_saint_denis",
-                  page: "annexe",
-                })
-              }
-              className="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground transition hover:opacity-90"
+            <TrackedCalendlyLink
+              href="https://calendly.com/mourchidmoutuidine/diagnostic-cours-maths-saint-denis"
+              location="page_cours_saint_denis"
+              page="cours-maths-saint-denis"
             >
               Réserver un appel pour commencer les cours
-              <ArrowRight className="h-4 w-4" />
-            </Link>
+            </TrackedCalendlyLink>
+
           </div>
         </div>
       </section>

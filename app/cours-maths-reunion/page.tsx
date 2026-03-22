@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { CheckCircle2, MapPin, GraduationCap, ArrowRight } from "lucide-react";
-import { trackEvent } from "@/lib/analytics";
+import { CheckCircle2, MapPin, GraduationCap } from "lucide-react";
+import { TrackedCalendlyLink } from "@/components/tracked-calendly-link";
 
 export const metadata: Metadata = {
   title: "Cours de maths à La Réunion | Maths & Réussite",
@@ -147,21 +146,13 @@ export default function CoursMathsReunionPage() {
             La Réunion.
           </p>
           <div className="mt-8">
-            <Link
+            <TrackedCalendlyLink
               href="https://calendly.com/mourchidmoutuidine/diagnostic-cours-maths-la-reunion"
-              target="_blank"
-              onClick={() =>
-                trackEvent("calendly_click", {
-                  location: "page_cours_reunion",
-                  page: "annexe",
-                })
-              }
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground transition hover:opacity-90"
+              location="page_cours_reunion"
+              page="cours-maths-reunion"
             >
               Réserver un diagnostic
-              <ArrowRight className="h-4 w-4" />
-            </Link>
+            </TrackedCalendlyLink>
           </div>
         </div>
       </section>
