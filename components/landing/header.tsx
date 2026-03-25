@@ -49,7 +49,6 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              target="_blank"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               {link.label}
@@ -58,6 +57,7 @@ export function Header() {
           <a
             href="https://calendly.com/mourchidmoutuidine/diagnostic-cours-maths-la-reunion"
             className="rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90"
+            target="_blank"
           >
             Prendre rendez-vous
           </a>
