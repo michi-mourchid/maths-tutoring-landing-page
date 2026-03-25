@@ -108,8 +108,6 @@ export default function RootLayout({
             </Script>
           </>
         ) : null}
-
-        <Analytics />
       </body>
     </html>
   );
